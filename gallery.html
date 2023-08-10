@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image Gallery</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!--FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/b8e00e8e2e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header class="home_header">
+    <h1 class="logoName">Let's<span>Goo</span></h1>
+    <ul>
+      <li>
+        <a href="home1.html"><i class="fa-solid fa-house"></i> &nbsp; Home </a>
+      </li>
+      <li><a href="subscription.html"> Subscription </a></li>
+      <li><a href="#"> Gallery </a></li>
+      <li><a href="profile.php"> Profile </a></li>
+      
+      <li>
+        <a href="signUp.html"
+          ><i class="fa-solid fa-right-to-bracket"></i> &nbsp; SignUp/Login
+        </a>
+      </li>
+    </ul>
+  </header>
+  <body>
+    <div id="title">GALLERY</div>
+    <section class="gallery min-vh-100">
+      <div class="container-lg">
+        <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+          <div class="col">
+            <img src="images/1.jpg" class="gallery-item" alt="Gallery1" />
+          </div>
+
+          <div class="col">
+            <img src="images/2.jpg" class="gallery-item" alt="Gallery2" />
+          </div>
+
+          <div class="col">
+            <img src="images/3.jpg" class="gallery-item" alt="Gallery3" />
+          </div>
+
+          <div class="col">
+            <img src="images/4.jpg" class="gallery-item" alt="Gallery4" />
+          </div>
+
+          <div class="col">
+            <img src="images/5.jpg" class="gallery-item" alt="Gallery5" />
+          </div>
+
+          <div class="col">
+            <img src="images/6.jpg" class="gallery-item" alt="Gallery6" />
+          </div>
+          <div class="col">
+            <img src="images/7.jpg" class="gallery-item" alt="Gallery6" />
+          </div>
+          <div class="col">
+            <img
+              src="images/8.jpg"
+              class="gallery-item"
+              alt="Gallery6"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/9.jpg"
+              class="gallery-item"
+              alt="Gallery6"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <!-- <div
+      class="modal fade"
+      id="gallery-popup"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header"> -->
+    <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+    <!-- <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="images/1.jpg" class="modal-img" alt="Modal Image" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+      document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("gallery-item")) {
+          const src = e.target.getAttribute("src");
+          document.querySelector(".modal-img").src = src;
+          const myModal = new bootstrap.Modal(
+            document.getElementById("gallery-popup")
+          );
+          myModal.show();
+        }
+      });
+    </script> -->
+    
+  <!-- Footer section -->
+  <div class="foot-body">
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <a href="#"><span>Back to top &nbsp;<i class="fa-solid fa-arrow-up"></i></span></a>
+      <!-- <ul class="social_icon">       -->
+        <ul>
+      <li>
+        <a href="#"><i class="fa-brands fa-instagram foot"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-facebook foot"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-whatsapp foot"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-twitter foot"></i></a>
+      </li><br>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p>©2022 PSS | All Rights Reserved</p>
+    </footer>
+  </div>
+
+    <style>
+     body,html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Ubuntu", sans-serif;
+ 
+}
+body{
+  background-color: #000;
+}
+
+.home_header {
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  position: sticky;
+  overflow-y: hidden;
+  
+}
+.form-titlee {
+  color: lightgoldenrodyellow;
+  font-weight: 900;
+  font-size: 40px;
+  text-align: left;
+  padding-left: 30px;
+}
+.logoName {
+  position: absolute;
+  padding: 3px;
+  float: left;
+  margin-left: 2%;
+  margin-top: 10px;
+  font-family: "Alfa Slab One", cursive;
+  color: #39ca74;
+}
+span {
+  color: rgb(255, 255, 255);
+}
+header ul {
+  width: auto;
+  float: right;
+  margin-top: 8px;
+}
+header ul li {
+  display: inline-block;
+  padding: 15px 30px;
+}
+a {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+a:hover {
+  color: #39ca74;
+  transition: 0.5s;
+}
+
+#title{
+  text-align: center;
+  font-weight: 900;
+  font-size: 50px;
+  color: #39ca74;
+}
+      .gallery {
+        padding: 80px 0px;
+      }
+    
+      .col {
+        padding: 10px;
+      }
+      .gallery img {
+        background: #fff;
+        padding: 10px;
+        width: 100%;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        max-width: 100%;
+        height: 40vh;
+      }
+      #gallery-popup .modal-img {
+        width: 100%;
+      }
+      .gallery-item:hover {
+        transform: scale(1.05);
+        transition: 0.4s;
+      }
+
+      
+/* Footer section */
+
+.foot-body {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 5rem;
+  background: #000;
+  text-align: center;
+  position: relative;
+}
+
+footer ul {
+  width: auto;
+  float: right;
+  margin-top: 8px;
+}
+footer ul li {
+  display: inline-block;
+  padding: 15px 30px;
+}
+
+.fa-arrow-up {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.foot-body span {
+  position: absolute;
+  top: 0px;
+  right: 114px;
+  opacity: 0.75;
+  font-weight: 500;
+  transition: 0.5s;
+}
+footer span:hover {
+  opacity: 1;
+}
+
+i.foot {
+  font-size: 1.5rem;
+  display: inline-block;
+  color: white;
+}
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .social_icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+footer .social_icon li,
+footer .menu li {
+  list-style: none;
+}
+footer .social_icon li a,
+footer .menu li a {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  list-style: none;
+}
+footer .social_icon li a:hover {
+  transform: translateY(-10px);
+}
+footer .menu li a {
+  font-size: 1.2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+footer .menu li a:hover {
+  opacity: 1;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(images/wave.png);
+  background-size: 1000px 100px;
+}
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 3s linear infinite;
+}
+
+footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 4s linear infinite;
+}
+
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+    </style>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Let's Goo</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.png" />
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="casade.css" />
+
+    <!--FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/b8e00e8e2e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <h1 class="logoName">Let's<span>Goo</span></h1>
+    <ul>
+      <li>
+        <a href="#"><i class="fa-solid fa-house"></i> &nbsp; Home </a>
+      </li>
+      <li><a href="#"> Subscription </a></li>
+      <li><a href="#"> Gallery </a></li>
+      <li><a href="#"> About Us </a></li>
+      <li>
+        <a href="signUp.html"
+          ><i class="fa-solid fa-right-to-bracket"></i> &nbsp; SignUp/Login
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <body>
+    <div class="loc">
+      <form action="" id="frm">
+        <h2 class="form-titlee">Book your ride!!!</h2>
+        <table cellpadding="5px" cellspacing="8px">
+          <tr>
+            <td><i class="fa-solid fa-location-dot"></i></td>
+            <td rowspan="4"> &nbsp;</td>
+            <td>
+              &nbsp;&nbsp;<input
+                type="text"
+                id="location"
+                placeholder="Enter location "
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-briefcase"></i></td>
+            <td>
+              &nbsp;
+              <select>
+                <option>Departure</option>
+                <option>Now</option>
+                <option>Schedule for later</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-clock"></i></td>
+            <td>
+              &nbsp;
+              <input type="time" id="deptime" />
+            </td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-gift"></i></td>
+            <td>
+              &nbsp;
+              <select name="" id="pack">
+                <option>Select Package</option>
+                <option>10-50 km</option>
+                <option>51-100 km</option>
+                <option>101-200 km</option>
+                <option>201-300 km</option>
+                <option>Above 300 km</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <br />
+        <center><button class="btnn">Search Rental Cabs</button></center>
+      </form>
+    </div>
+
+    <!-- Image Slider -->
+   
+    <div class="slider_auto">
+      <div class="banner1">
+        <img class="slide_img" src="images/s1.jpg" />
+        <div class="slider_text slider_text1">
+          <h1 class="slider_h1">Silence is not enough</h1>
+          <span class="slider_span"></span>
+          <p class="slider_p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            volutpat dui vel mollis tristique. Etiam vitae vestibulum neque.
+            Aenean vitae urna elementum, semper tortor sit amet, commodo mauris.
+            Vivamus molestie dictum dui a euismod. Praesent porta elit et ante
+            hendrerit, eu fermentum mauris semper. In hac habitasse platea
+            dictumst.
+          </p>
+        </div>
+      </div>
+      <div class="banner2">
+        <img class="slide_img" src="images/s2.jpg" />
+        <div class="slider_text slider_text2">
+          <h1 class="slider_h1">Future of next generation</h1>
+          <span class="slider_span"></span>
+          <p class="slider_p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            volutpat dui vel mollis tristique. Etiam vitae vestibulum neque.
+            Aenean vitae urna elementum, semper tortor sit amet, commodo mauris.
+            Vivamus molestie dictum dui a euismod. Praesent porta elit et ante
+            hendrerit, eu fermentum mauris semper. In hac habitasse platea
+            dictumst.
+          </p>
+        </div>
+      </div>
+      <div class="banner3">
+        <img class="slide_img" src="images/s3.jpg" />
+        <div class="slider_text slider_text3">
+          <h1 class="slider_h1">know your passion</h1>
+          <span class="slider_span"></span>
+          <p class="slider_p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            volutpat dui vel mollis tristique. Etiam vitae vestibulum neque.
+            Aenean vitae urna elementum, semper tortor sit amet, commodo mauris.
+            Vivamus molestie dictum dui a euismod. Praesent porta elit et ante
+            hendrerit, eu fermentum mauris semper. In hac habitasse platea
+            dictumst.
+          </p>
+        </div>
+      </div>
+      <div class="banner4">
+        <img class="slide_img" src="images/s4.jpg" />
+        <div class="slider_text slider_text4">
+          <h1 class="slider_h1">Keep your dreams alive</h1>
+          <span class="slider_span"></span>
+          <p class="slider_p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            volutpat dui vel mollis tristique. Etiam vitae vestibulum neque.
+            Aenean vitae urna elementum, semper tortor sit amet, commodo mauris.
+            Vivamus molestie dictum dui a euismod. Praesent porta elit et ante
+            hendrerit, eu fermentum mauris semper. In hac habitasse platea
+            dictumst.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why Let's goo -->
+    <!--
+<div class="features">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/s1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/s2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/s3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+-->
+
+    <!-- Testimonial -->
+    
+    <h1 class="testimonial-heading">Look What our customers said</h1>
+    <div class="testimonials">
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          ⭐⭐⭐⭐⭐
+          <p>
+            We had a great experience with reliable car rental! There was only
+            one car remaining in the class of vehicle we reserved, which ended
+            up having a safety recall. We were promptly upgraded and sent on our
+            way. I was a bit taken aback when we were handed the keys and told
+            to let them know if there were any concerns, but on a brand new
+            vehicle there were none.
+          </p>
+          <div class="image">
+            <img src="images/billgates2.jpg" height="110px" width="100px" />
+          </div>
+          <div class="details">
+            <h2>Bill gates<br /><span>Co-founder of Microsoft</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          ⭐⭐⭐⭐⭐
+          <p>
+            I had low expectations of Sicily by car from reading the other
+            reviews but there was little in it for all the hire companies
+            reviews. however i was pleasantly surprised. apart from it being
+            difficult to find the office, the experience was great from start to
+            finish. we received a good quality car free from defects and whilst
+            the representative did spend a long time trying to find fault with
+            the car on return, but couldn't find anything
+          </p>
+          <div class="image">
+            <img src="images/elonmusk.png" height="105px" width="100px" />
+          </div>
+          <div class="details">
+            <h2>Elon musk<br /><span>Founder of Tesla</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          ⭐⭐⭐⭐⭐
+          <p>
+            This was the easiest car rental experience ever! Claude met us right
+            at the airport with our car and we followed him to where we were
+            staying. It was so nice to have someone show us where to go! Also,
+            we ended up getting a flat tire at one point during our trip...we
+            called Claude and he was literally there within minutes to fix our
+            tire for us. Returning the car was as easy as dropping it off at the
+            airport. Will DEFINITELY use let's goo again.
+          </p>
+          <div class="image">
+            <img src="images/viratkohli.png" height="155px" width="105px" />
+          </div>
+          <div class="details">
+            <h2>Virat Kohli<br /><span>Indian cricketer</span></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+    <!-- Footer section -->
+    <div class="foot-body">
+      <footer>
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <a href="#"><span>Back to top &nbsp;<i class="fa-solid fa-arrow-up"></i></span></a>
+        <!-- <ul class="social_icon">       -->
+          <ul>
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram foot"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook foot"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-whatsapp foot"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter foot"></i></a>
+        </li><br>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <p>©2022 PSS | All Rights Reserved</p>
+      </footer>
+    </div>
+    
+
+    <!-- Script -->
+    <script src="index.js"></script>
+  </body>
+</html>

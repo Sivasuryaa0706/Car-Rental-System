@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Let's Goo</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.png" />
+    <!--FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/b8e00e8e2e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        padding: 5% 10%;
+        background-image: url(images/signup1.jpg);
+        background-size: 100%;
+        font-size: 1.2rem;
+      }
+      h1 {
+        color: #39ca74;
+      }
+      .input-group {
+        position: relative;
+      }
+      .input {
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        font: inherit;
+        color: #fff;
+        background-color: transparent;
+        outline: 2px solid #2d3a59;
+      }
+      .input:focus + .input-label2,
+      .input:valid + .input-label2 {
+        transform: translate(10px, -14px) scale(0.8);
+        color: #39ca74;
+        padding-inline: 5px;
+        background-color: #2d3a59;
+      }
+      .input:is(:focus, :valid) {
+        outline-color: #39ca74;
+      }
+      .input-label2 {
+        position: absolute;
+        top: 10;
+        left: 0;
+        transform: translate(10px, 10px);
+        transition: transform 0.25s;
+      }
+      /* button */
+      .button {
+        position: relative;
+        width: 90px;
+        height: 40px;
+        font-size: 10px;
+        background-color: #202231;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: width 0.25s, border-radius 0.5s;
+      }
+      .button * {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.5s;
+      }
+      .icon {
+        opacity: 0;
+      }
+      .button:focus {
+        width: 40px;
+        background-color: #44c08a;
+        border-radius: 50%;
+      }
+      .button:focus .text {
+        opacity: 0;
+      }
+      .button:focus .icon {
+        opacity: 1;
+        transition-delay: 0.5s;
+      }
+      #log {
+        color: rgb(255, 255, 255);
+      }
+      #log:hover {
+        color: #39ca74;
+        transition: 0.5s;
+      }
+      #line{
+        color: #39ca74;
+        font-size: 15px;
+      }
+    </style>
+    <h1>&nbsp;Sign Up</h1>
+    <div class="input-group">
+      <div class="bg">
+        <form action="signphp.php" method="post" onsubmit="return sign()">
+        <input type="text" id="fname" name="fname" required class="input" />
+        <label for="fname" class="input-label2">First name</label
+        ><br /><br /><br />
+        <input type="text" id="lname" name="lname" required class="input" />
+        <label for="lname" class="input-label2">Last name</label
+        ><br /><br /><br />
+        <input type="email" id="email" name="email" required class="input" />
+
+        <label for="email" class="input-label2">Email Address</label
+        ><br /><br /><br />
+        <input type="password" id="pass" name="pass" required class="input" />
+        <label for="pass" class="input-label2">Create Password</label
+        ><br /><br /><br />
+
+        <input type="password" id="pass2" name="pass2" required class="input" />
+        <label for="pass2" class="input-label2">Re-enter Password</label
+        ><br /><br /><br />
+      </div>
+    </div>
+    <div id="line"></div>
+    <!-- button -->
+    <button
+      type="submit"
+      class="button"
+     
+    >
+      <span class="text">Submit</span
+      ><i class="fa-solid fa-check icon"></i></button
+    >&nbsp;&nbsp;
+    <a href="login.html" id="log"><span>Already a Customer ?</span></a>
+      </form>
+    <script>
+      function sign() {
+        a = document.getElementById("pass").value;
+        b = document.getElementById("pass2").value;
+        if (a != b) {
+          document.getElementById("line").innerHTML = "Enter a valid password.";
+          return false;
+        }
+        else
+          return true;
+      }
+    </script>
+  </body>
+</html>
